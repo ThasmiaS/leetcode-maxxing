@@ -1,6 +1,10 @@
 class Solution:
     def isPalindrome(self, x: int) -> bool:
-        #2 pointer problem
+        #string forward == string backward true or false
+        return str(x) == str(x)[::-1]
+
+
+        """#2 pointer problem
         string = str(x)
         start = 0
         end = len(string) - 1
@@ -11,5 +15,5 @@ class Solution:
             start += 1
             end -= 1
         
-        return True
+        return True"""
             
